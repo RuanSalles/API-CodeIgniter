@@ -41,6 +41,7 @@ docker exec -it ci4_php /bin/bash
 php spark migrate
 php spark db:seed UserSeeder
 ```
+**Observação:** A senha e usuário do PHPMyAdmin são `root` e `root`, respectivamente.
 
 Após isso você poderá utilizar a API através do Postman ou qualquer outro cliente HTTP.
 Nos Endpoints estão disponíveis as seguintes operações:
