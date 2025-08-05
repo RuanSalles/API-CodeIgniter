@@ -14,6 +14,11 @@ class UserController extends ResourceController
     public function index()
     {
         $users = $this->model->findAll();
+
+        if (empty($users)) {
+            return $this->failNotFound('Nenhum usuário encontrado');
+        }
+
         return $this->respond($users);
     }
 
