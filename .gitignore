@@ -1,1 +1,60 @@
-.idea*
+# -----------------------------
+# CodeIgniter 4 .gitignore
+# -----------------------------
+
+# ambiente / build
+.env
+.env.*
+.env.php
+
+# vendor (dependências do composer)
+vendor/
+
+# cache do framework
+writable/cache/*
+!writable/cache/index.html
+
+# logs
+writable/logs/*
+!writable/logs/index.html
+
+# sessões
+writable/session/*
+!writable/session/index.html
+
+# uploads temporários
+writable/uploads/*
+!writable/uploads/index.html
+
+# test coverage
+coverage/
+.phpunit.result.cache
+
+# IDEs
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# SO
+.DS_Store
+Thumbs.db
+
+# composer
+composer.lock
+
+# arquivos temporários
+*.bak
+*.swp
+
+# node (caso use mix/webpack)
+node_modules/
+public/build/
+public/hot
+
+# docker
+docker-compose.override.yml
+
+# arquivos pessoais
+*.log
+*.tmp
